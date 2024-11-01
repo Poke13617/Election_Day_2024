@@ -1,19 +1,95 @@
-
-.Introduction{
+.Intro, .HVW, .WYVM{
 background-color: crimson;
 }
-.HOED{
+.HOED, .KFAV{
 background-color:dodgerblue;
-}
-.HVW{
-background-color: crimson;
-}
-.KFAV{
-background-color:dodgerblue;
-}
-.WYVM{
-background-color: crimson;
 }
 p, li{
-    font-size:larger
+    font-size:larger;
 }
+*{
+    box-sizing: border-box;
+    /*box model fix*/
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+footer{
+    margin-top:0;
+    padding:10%;
+    background-color:dodgerblue;
+    color: #0e0d0a;
+    min-height: 300px;
+}
+.logo{
+    font-family: sans-serif;
+    color: #151f22;
+    margin: 0;
+    font-size: 1.45em;
+}
+.main-nav{
+    margin-top: 5px;
+ }
+ .logo a,
+ .main-nav a {
+   font-family: "Stick", sans-serif;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+ }
+ 
+ .main-nav a {
+    color: lightcoral;;
+    font-size: .99em;
+ }
+ 
+ .main-nav a:hover{
+    color: lightblue;
+ }
+ .header{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid whitesmoke;
+    background-color:white;
+    box-shadow: 0px 0px 14px 0px rgb(0,0,0,0.75);
+    border-radius: 5px;
+ }
+
+    /*------Tablet Media Query-------------*/
+    @media screen and (min-width: 769px) {
+        .header,
+    .main-nav {
+        display: flex;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+        .header{
+            width:80%;
+            margin: 0 auto;
+            max-width:1150px;
+        }
+    }
+}
+    /*------End Tablet Media Query---------*/
+
+    /*-------Desktop Media Query-----------*/
+@media screen and (min-width:1125px) {
+
+    .header {
+        flex-direction:row;
+        justify-content:space-between;
+    }
+}
+    /*------End Desktop Media Query-------*/
+
+    /*-----Large Screen Media Query-------*/
+@media screen and (min-width:1850px) {
+    .header {
+        flex-direction:row;
+        justify-content:space-between;
+    }
+}
+    /*----End Large Screen Media Query----*/
