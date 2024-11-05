@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC&family=Chakra+Petch&family=IBM+Plex+Sans&display=swap');
+
+
 .Intro, .HVW, .WYVM{
 background-color: crimson;
 }
@@ -22,26 +26,25 @@ footer{
     min-height: 300px;
 }
 .logo{
-    font-family: sans-serif;
+    font-family: "Anton SC", sans-serif;
     color: #151f22;
     margin: 0;
-    font-size: 1.45em;
+    font-size: 1.75em;
 }
 .main-nav{
     margin-top: 5px;
  }
  .logo a,
  .main-nav a {
-   font-family: "Stick", sans-serif;
     padding: 10px 15px;
-    text-transform: uppercase;
     text-align: center;
     display: block;
  }
  
  .main-nav a {
     color: lightcoral;;
-    font-size: .99em;
+    font-size: 1.25em;
+    font-family: "Bona Nova SC", serif;
  }
  
  .main-nav a:hover{
@@ -57,7 +60,7 @@ footer{
  }
 
     /*------Tablet Media Query-------------*/
-    @media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
         .header,
     .main-nav {
         display: flex;
@@ -93,3 +96,9 @@ footer{
     }
 }
     /*----End Large Screen Media Query----*/
+    .sectionstart{
+        font-family: "Chakra Petch", sans-serif;
+    }
+    .non-bulleted{
+        list-style:none;
+    }
